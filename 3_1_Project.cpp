@@ -1,4 +1,5 @@
 // Module 3 project attempt 1
+//Long switch statement
 /*
 
 #include "mbed.h"
