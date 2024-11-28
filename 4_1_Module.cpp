@@ -82,7 +82,7 @@ void button_4_handler(){
 int main(){
 		
 	//Initially turn off all LEDs and set all the counters to 0
-	button_4_handler();  //So does this run every loop it's not an interrupt?
+	button_4_handler();  //just clear them off the jump
 	
 
 	//Interrupt handlers
