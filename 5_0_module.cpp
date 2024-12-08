@@ -18,6 +18,7 @@ AnalogIn pot2(AIN2);
 float val1;
 float val2;
 float i;
+float hz;
 int main(){
     while(1){
         val1 = pot1.read();
@@ -28,6 +29,8 @@ int main(){
         for(i = 0; i < 1; i += 0.05){
             speaker.period(0.003125-(0.002*val1));
             speaker = i * 0.05 * val2;
+            hz = 1/(0.003125-(0.002*val1));
+            printf("the frequency is %f\n", hz);  // Print out the frequency
         }
         
         wait_ms(100);

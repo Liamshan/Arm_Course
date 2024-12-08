@@ -1,7 +1,6 @@
 //Tank Sensor Machine Lab Solution
 
 /*
-
 #include "mbed.h"
 
 //Define Speaker
@@ -38,8 +37,9 @@ float high = 530; //Hz
 //FUNCTIONS
     //function for doing warble
 void warble() {
+    led1 = 1;
     speaker = 0.3;
-    speaker.period(1.0/low);  // ther period is the 1/hz.
+    speaker.period(1.0/low);  
     wait(0.25);
     speaker.period(1.0/med);
     wait(0.25);
@@ -50,6 +50,7 @@ void warble() {
     speaker.period(1.0/low);
     wait(0.25);
     speaker = 0;
+    led1 = 0;
 }
     
     
@@ -108,5 +109,4 @@ int main() {
         wait(1);
     }
 }
-
 */
